@@ -1,3 +1,4 @@
 ipython==8.18.1
 black==21.12b0
 pillow==10.4.0
+djangorestframework==3.15.2
