@@ -10,6 +10,11 @@
 </head>
 <body>
 <div class="container mx-4">
+    {% if user.is_authenticated %}
+        Hello {{ user.username }}
+    {% else %}
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
     {% block content %}
     {% endblock %}
 </div>
